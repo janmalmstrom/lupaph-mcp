@@ -1,0 +1,26 @@
+{
+  "name": "lupaph-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Philippine real estate data — search listings, province prices, transfer cost calculator, and legal rules via lupaph.com",
+  "keywords": ["mcp", "philippines", "real-estate", "ofw", "property", "lupaph"],
+  "author": "LupaPH <hello@lupaph.com>",
+  "license": "MIT",
+  "homepage": "https://lupaph.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janmalmstrom/lupaph-mcp"
+  },
+  "type": "module",
+  "bin": {
+    "lupaph-mcp": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
