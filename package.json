@@ -1,6 +1,7 @@
 {
   "name": "lupaph-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "mcpName": "io.github.janmalmstrom/lupaph-mcp",
   "description": "MCP server for Philippine real estate data — search listings, province prices, transfer cost calculator, and legal rules via lupaph.com",
   "keywords": ["mcp", "philippines", "real-estate", "ofw", "property", "lupaph"],
   "author": "LupaPH <hello@lupaph.com>",

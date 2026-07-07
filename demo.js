@@ -1,0 +1,26 @@
+const price = 3_000_000;
+const taxBase = price;
+const cgt = taxBase * 0.06;
+const dst = taxBase * 0.015;
+const transferTax = price * 0.005;
+const regFee = price * 0.0025;
+const notarial = price * 0.015;
+const total = cgt + dst + transferTax + regFee + notarial;
+const fmt = n => '₱' + Math.round(n).toLocaleString();
+
+console.log('');
+console.log('== LupaPH MCP — Transfer Cost Calculator ==');
+console.log('');
+console.log('Property price:       ' + fmt(price));
+console.log('');
+console.log('Capital Gains Tax 6%: ' + fmt(cgt));
+console.log('Doc Stamp Tax  1.5%:  ' + fmt(dst));
+console.log('Transfer Tax   0.5%:  ' + fmt(transferTax));
+console.log('Registration  ~0.25%: ' + fmt(regFee));
+console.log('Notarial Fee  ~1.5%:  ' + fmt(notarial));
+console.log('─────────────────────────────────────────');
+console.log('Total transfer costs: ' + fmt(total) + ' (9.8%)');
+console.log('Total amount needed:  ' + fmt(price + total));
+console.log('');
+console.log('Source: lupaph.com | npm: lupaph-mcp');
+console.log('');
