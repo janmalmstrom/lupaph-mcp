@@ -15,9 +15,7 @@ Philippine real estate data for AI agents — search verified listings, calculat
 
 ## Install
 
-### Claude Desktop / Claude Code
-
-Add to your MCP config:
+The LupaPH MCP works with any MCP-compatible AI assistant. The config JSON is identical for all clients:
 
 ```json
 {
@@ -30,14 +28,30 @@ Add to your MCP config:
 }
 ```
 
-**Claude Desktop config location:**
+### Claude Desktop
+Config file location:
 - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 
-**Claude Code:**
+### Claude Code
 ```bash
 claude mcp add lupaph -- npx -y lupaph-mcp
 ```
+
+### Cursor
+Add to `.cursor/mcp.json` in your project or home directory.
+
+### Windsurf
+Add to `~/.codeium/windsurf/mcp_config.json`.
+
+### Cline (VS Code)
+Open Cline → MCP Servers → Add Server → paste the config JSON.
+
+### Continue
+Add to `.continue/config.json` under `mcpServers`.
+
+### Zed
+Add to `~/.config/zed/settings.json` under `context_servers`.
 
 ### Manual install
 
